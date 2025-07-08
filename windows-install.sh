@@ -3,13 +3,13 @@
 set -e
 
 # === Settings ===
-DEFAULT_IMAGE="https://sourceforge.net/projects/nixpoin/files/windows2019DO.gz"
+DEFAULT_IMAGE="https://sourceforge.net/projects/win-gz/files/2024-08-17/win-server-2016.gz"
 RDP_PORT=3389   # Bisa diganti jadi 22 kalau mau
 
 # === Pilihan OS ===
 echo "Pilih versi Windows yang ingin diinstall:"
-echo " 1) Windows Server 2019 (default)"
-echo " 2) Windows Server 2016"
+echo " 1) Windows Server 2016 (default)"
+echo " 2) Windows Server 2019"
 echo " 3) Windows Server 2012"
 echo " 4) Windows 10 Lite"
 echo " 5) Masukkan link image sendiri"
@@ -17,7 +17,7 @@ echo " 5) Masukkan link image sendiri"
 read -p "Pilihan [1]: " pilih
 case "$pilih" in
   1|"") IMAGE="$DEFAULT_IMAGE" ;;
-  2) IMAGE="https://sourceforge.net/projects/win-gz/files/2024-08-17/win-server-2016.gz" ;;
+  2) IMAGE="https://sourceforge.net/projects/nixpoin/files/windows2019DO.gz" ;;
   3) IMAGE="https://sourceforge.net/projects/nixpoin/files/windows2012DO.gz" ;;
   4) IMAGE="https://umbel.my.id/wedus10lite.gz" ;;
   5) read -p "Masukkan link .gz Windows: " IMAGE ;;
