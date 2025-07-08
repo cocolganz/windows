@@ -34,7 +34,7 @@ read -p "Ketik 'YES' untuk melanjutkan: " confirm
 
 # === Instalasi alat ===
 echo "[⏳] Menginstall tools..."
-apt update -y && apt install -y wget curl gunzip
+apt update -y && apt install -y wget curl gzip
 
 # === Overwrite Disk ===
 echo "[🚀] Menulis image ke /dev/vda, mohon tunggu..."
